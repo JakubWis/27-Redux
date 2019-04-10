@@ -10,7 +10,7 @@ const initialState = {
     comments: []
 };
 
-function reducer(state = [], action) {
+function reducer(state = initialState, action) {
     switch(action.type) {
         case ADD_COMMENT:
             return Object.assign({}, state, {
